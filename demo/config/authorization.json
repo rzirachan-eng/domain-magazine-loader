@@ -1,0 +1,12 @@
+{
+  "authorized_scope": [
+    "offline_domain_context"
+  ],
+  "human_instruction": "Approved: run the offline demo.",
+  "not_authorized": [
+    "live_execution"
+  ],
+  "recording_mode": "VERBATIM_USER_INSTRUCTION",
+  "schema": "domain.authorization/1",
+  "signature_status": "IMPLEMENTATION_AUTHORIZED_NOT_SIGNED"
+}

@@ -1,0 +1,220 @@
+{
+  "applicability": [
+    "Offline review of a single fictional checkout experiment"
+  ],
+  "domain": "ab_test_review",
+  "items": [
+    {
+      "embargo_oos": "CLEAR",
+      "id": "uplift-v1",
+      "kind": "FACT",
+      "known_at": "2026-03-02T09:00:00+09:00",
+      "known_at_basis": "Report date",
+      "permission": [
+        "analyst-a",
+        "reviewer-b"
+      ],
+      "purposes": [
+        "offline_audit"
+      ],
+      "required_context": [
+        "seasonality-dissent"
+      ],
+      "scope": "ab_test_review",
+      "source": {
+        "artifact": "sources/experiment-report.md",
+        "artifact_sha256": "4d81704f4db73d9b00bd9c8f3c6888b97d210a463982348cc1881f6f0165be74",
+        "end_line": 4,
+        "excerpt_sha256": "0bd5fbf00626af8d8c68263389beed5675aa268910d8f6bff80ddef6a3e8a96f",
+        "start_line": 3
+      },
+      "supersedes": [],
+      "title": "Initial uplift reported in report v1",
+      "topics": [
+        "conversion",
+        "uplift"
+      ]
+    },
+    {
+      "embargo_oos": "CLEAR",
+      "id": "uplift-correction",
+      "kind": "CORRECTION",
+      "known_at": "2026-03-09T09:00:00+09:00",
+      "known_at_basis": "Correction notice date",
+      "permission": [
+        "analyst-a",
+        "reviewer-b"
+      ],
+      "purposes": [
+        "offline_audit"
+      ],
+      "required_context": [
+        "uplift-v1"
+      ],
+      "scope": "ab_test_review",
+      "source": {
+        "artifact": "sources/correction.md",
+        "artifact_sha256": "f97c898d9aeb084e737e9389fc92318560c7b9544ef828a3945637b034b36bf8",
+        "end_line": 5,
+        "excerpt_sha256": "aa94861f407ab573751e2aea6d39c848a1a7abba12be7e3da681bedc2e6fcc16",
+        "start_line": 3
+      },
+      "supersedes": [
+        "uplift-v1"
+      ],
+      "title": "Uplift corrected after bot removal",
+      "topics": [
+        "conversion",
+        "uplift"
+      ]
+    },
+    {
+      "embargo_oos": "CLEAR",
+      "id": "seasonality-dissent",
+      "kind": "DISSENT",
+      "known_at": "2026-03-09T10:00:00+09:00",
+      "known_at_basis": "Review note date",
+      "permission": [
+        "analyst-a",
+        "reviewer-b"
+      ],
+      "purposes": [
+        "offline_audit"
+      ],
+      "required_context": [],
+      "scope": "ab_test_review",
+      "source": {
+        "artifact": "sources/analyst-notes.md",
+        "artifact_sha256": "6c06109526650112a01b0051111a276b346ad73953b8569a9c328319f4f67373",
+        "end_line": 4,
+        "excerpt_sha256": "7df7261d999ee3ed32b7e2334939b6e633f24dfd186a8d3ac706200635b7d942",
+        "start_line": 2
+      },
+      "supersedes": [],
+      "title": "Reviewer objection: one pay cycle only",
+      "topics": [
+        "seasonality"
+      ]
+    },
+    {
+      "embargo_oos": "CLEAR",
+      "id": "srm-method",
+      "kind": "METHOD",
+      "known_at": "2026-03-01T09:00:00+09:00",
+      "known_at_basis": "Method note date",
+      "permission": [
+        "analyst-a",
+        "reviewer-b"
+      ],
+      "purposes": [
+        "offline_audit"
+      ],
+      "required_context": [],
+      "scope": "ab_test_review",
+      "source": {
+        "artifact": "sources/method.md",
+        "artifact_sha256": "c7dad4e5e0e619c993d28de62b4b181b005481d2eb5b92013448ef0b28e92372",
+        "end_line": 3,
+        "excerpt_sha256": "1e7a648b3baf183409fd7cc5738a9fb922a1bd014bc392419b43a08a18502867",
+        "start_line": 2
+      },
+      "supersedes": [],
+      "title": "Sample ratio check before reading metrics",
+      "topics": [
+        "method",
+        "sample-ratio"
+      ]
+    },
+    {
+      "embargo_oos": "EMBARGO",
+      "id": "sealed-holdout",
+      "kind": "FACT",
+      "known_at": "2026-03-05T09:00:00+09:00",
+      "known_at_basis": "Slice creation date",
+      "permission": [
+        "analyst-a",
+        "reviewer-b"
+      ],
+      "purposes": [
+        "offline_audit"
+      ],
+      "required_context": [],
+      "scope": "ab_test_review",
+      "source": {
+        "artifact": "sources/holdout.md",
+        "artifact_sha256": "5e74e84096fd9aa359c1b282bac0cb1e7baf87e22ad2304291e4f14f762a9333",
+        "end_line": 2,
+        "excerpt_sha256": "ec25ac5cbc508a92cfacb991fa99bba66a6e6abe6a01dfecee78e75b0e8f1ee2",
+        "start_line": 2
+      },
+      "supersedes": [],
+      "title": "Sealed holdout slice",
+      "topics": [
+        "holdout"
+      ]
+    },
+    {
+      "embargo_oos": "CLEAR",
+      "id": "q2-forecast",
+      "kind": "HYPOTHESIS",
+      "known_at": "2026-06-30T09:00:00+09:00",
+      "known_at_basis": "Planned publication date",
+      "permission": [
+        "analyst-a",
+        "reviewer-b"
+      ],
+      "purposes": [
+        "offline_audit"
+      ],
+      "required_context": [],
+      "scope": "ab_test_review",
+      "source": {
+        "artifact": "sources/holdout.md",
+        "artifact_sha256": "5e74e84096fd9aa359c1b282bac0cb1e7baf87e22ad2304291e4f14f762a9333",
+        "end_line": 3,
+        "excerpt_sha256": "f718ec3d95c0c3802605aae432ab56879fb979d83e34e66733d1e03261d407b0",
+        "start_line": 3
+      },
+      "supersedes": [],
+      "title": "Q2 forecast (not yet available)",
+      "topics": [
+        "forecast"
+      ]
+    },
+    {
+      "embargo_oos": "CLEAR",
+      "id": "finance-memo",
+      "kind": "FACT",
+      "known_at": "2026-03-04T09:00:00+09:00",
+      "known_at_basis": "Memo date",
+      "permission": [
+        "reviewer-b"
+      ],
+      "purposes": [
+        "offline_audit"
+      ],
+      "required_context": [],
+      "scope": "ab_test_review",
+      "source": {
+        "artifact": "sources/finance.md",
+        "artifact_sha256": "f4989f9493f101b87e527a4af4172c031a1c376e640cb632557f5bb513b2bbb2",
+        "end_line": 2,
+        "excerpt_sha256": "0f1665caa5a7f9e099f76c6ba401ed4f2d21b300d916daf211e4c0ac2289603b",
+        "start_line": 2
+      },
+      "supersedes": [],
+      "title": "Finance revenue estimate",
+      "topics": [
+        "revenue"
+      ]
+    }
+  ],
+  "limitations": [
+    "All content is invented for demonstration",
+    "Hashes prove byte identity, not authorship or truth"
+  ],
+  "magazine_id": "ab-test-review",
+  "schema": "domain.magazine/1",
+  "title": "A/B test review (fictional demo)",
+  "version": "1.0.0"
+}

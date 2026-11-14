@@ -1,0 +1,10 @@
+{
+  "seats": [
+    {
+      "id": "analyst-a"
+    },
+    {
+      "id": "reviewer-b"
+    }
+  ]
+}

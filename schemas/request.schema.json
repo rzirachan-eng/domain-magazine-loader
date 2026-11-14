@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Domain request contract",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "work_order_id",
+    "actor_id",
+    "purpose",
+    "domain",
+    "topics",
+    "knowledge_cutoff",
+    "allowed_evidence_scopes",
+    "identity_revision",
+    "catalog_snapshot",
+    "byte_cap"
+  ],
+  "properties": {
+    "schema": {
+      "const": "domain.request/1"
+    },
+    "work_order_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "actor_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "purpose": {
+      "enum": [
+        "offline_audit",
+        "historical_replay"
+      ]
+    },
+    "domain": {
+      "type": "string",
+      "minLength": 1
+    },
+    "topics": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "knowledge_cutoff": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "allowed_evidence_scopes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "identity_revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "catalog_snapshot": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "byte_cap": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 65536
+    }
+  }
+}

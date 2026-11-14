@@ -1,0 +1,15 @@
+{
+  "revision": "ID-1",
+  "seats": [
+    {
+      "immutable": {
+        "agent_id": "analyst-a"
+      }
+    },
+    {
+      "immutable": {
+        "agent_id": "reviewer-b"
+      }
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "authorization": {
+    "path": "config/authorization.json",
+    "sha256": "6185f6faf2aac3cc41c1d82bf1df7b500e2687c65c33a7b70774a90d346cf9f4"
+  },
+  "bindings": {
+    "catalog": {
+      "path": "config/catalog.json",
+      "sha256": "880226ee593a632cd7cd14eec591f899ccbc7bcd90a9cd39833cc2ff1de2409f"
+    },
+    "identity": {
+      "path": "bindings/identity.json",
+      "sha256": "5e3fd3b33a811159c0cf7962d98c1bd4591c3e5f9ee8a023956d331ec202c6fd"
+    },
+    "registry": {
+      "path": "bindings/registry.json",
+      "sha256": "3045fca993984350e90468f8c0a4c95f8bd8ba94d3094330df8ce0f3aab28eb0"
+    },
+    "runtime": {
+      "path": "bindings/runtime.json",
+      "sha256": "afb6f7c389af7f018a586372736e99bef5c2a71fb39652e77252e6ecedb047d1"
+    }
+  },
+  "grants": [
+    {
+      "actors": [
+        "analyst-a"
+      ],
+      "authority_type": "DIRECT_USER_OFFLINE",
+      "byte_cap": 20000,
+      "domains": [
+        "ab_test_review"
+      ],
+      "not_after": "2026-03-31T00:00:00+09:00",
+      "not_before": "2026-03-10T00:00:00+09:00",
+      "purpose": "offline_audit",
+      "scopes": [
+        "ab_test_review"
+      ],
+      "source_paths": [
+        "sources/analyst-notes.md",
+        "sources/correction.md",
+        "sources/experiment-report.md",
+        "sources/finance.md",
+        "sources/holdout.md",
+        "sources/method.md"
+      ],
+      "task_db": null,
+      "work_order_id": "DEMO-AB-REVIEW"
+    }
+  ],
+  "schema": "domain.host-grants/1"
+}

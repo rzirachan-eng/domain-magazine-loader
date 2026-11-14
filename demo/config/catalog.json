@@ -1,0 +1,15 @@
+{
+  "magazines": [
+    {
+      "domain": "ab_test_review",
+      "magazine_id": "ab-test-review",
+      "ref": {
+        "path": "library/ab-test-review.v1.json",
+        "sha256": "c7e9956eaa291c67b68f4d4243c3caf166aee49cfa3fc3e0d3de263f23fdd020"
+      },
+      "version": "1.0.0"
+    }
+  ],
+  "schema": "domain.catalog/1",
+  "version": "CAT-1"
+}

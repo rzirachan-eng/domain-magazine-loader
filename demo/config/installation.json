@@ -1,0 +1,11 @@
+{
+  "catalog": {
+    "path": "config/catalog.json",
+    "sha256": "880226ee593a632cd7cd14eec591f899ccbc7bcd90a9cd39833cc2ff1de2409f"
+  },
+  "host_grants": {
+    "path": "config/host-grants.json",
+    "sha256": "138e1ed0fd54c4e66de015fae63bc0a37532acc651b4188a248e76d09dc77483"
+  },
+  "schema": "domain.installation/1"
+}

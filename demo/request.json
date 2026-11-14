@@ -1,0 +1,19 @@
+{
+  "actor_id": "analyst-a",
+  "allowed_evidence_scopes": [
+    "ab_test_review"
+  ],
+  "byte_cap": 20000,
+  "catalog_snapshot": "880226ee593a632cd7cd14eec591f899ccbc7bcd90a9cd39833cc2ff1de2409f",
+  "domain": "ab_test_review",
+  "identity_revision": "ID-1",
+  "knowledge_cutoff": "2026-03-10T12:00:00+09:00",
+  "purpose": "offline_audit",
+  "schema": "domain.request/1",
+  "topics": [
+    "uplift",
+    "conversion",
+    "method"
+  ],
+  "work_order_id": "DEMO-AB-REVIEW"
+}
