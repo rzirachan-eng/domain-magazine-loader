@@ -28,7 +28,7 @@
 ```bash
 python cli.py --request demo/request.json --summary   # 摘要
 python cli.py --request demo/request.json             # 完整包 + 带引用的渲染文本
-python -m unittest discover -s tests                  # 65 个测试
+python -m unittest discover -s tests                  # 65 个测试（GitHub Actions 在 Ubuntu/Windows × Python 3.9/3.12 上自动运行）
 python build_demo.py                                  # 重新生成演示数据（确定性，可与现有文件逐字节比对）
 ```
 
